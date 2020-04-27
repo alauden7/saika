@@ -4,7 +4,7 @@ var orbital = new Image();
 function init() {
   saika.src = "/Users/anyalaudenslager/Saika/Saika-text.png";
   moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
-  orbital.src = "/Users/anyalaudenslager/Desktop/SAIKA/Orbital-2.png";
+  orbital.src = "/Users/anyalaudenslager/Desktop/SAIKA/public/images/Orbital-2.png";
   window.requestAnimationFrame(draw);
 }
 
@@ -44,3 +44,10 @@ function draw() {
 }
 
 init();
+
+// experiment for later:
+// var logo = document.getElementById("logo");
+// logo.addEventListener("click", function() {
+//   console.log("hello");
+//   logo.classList.add("invisible");
+// });

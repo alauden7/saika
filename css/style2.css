@@ -5,32 +5,26 @@ html, body {
     background-size: cover;
     }
 
-.top-row, 
-.bottom-row {
+h1, h2 {
     color: white;
-    display:flex;
-    justify-content: space-between;
-    margin: 0 1em;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.header {
     height: 75%;
     font-size: 40px;
+    font-family: "Open Sans Condensed";
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-/* experiment for later
-.invisible {
-    display: none;
+
+p {
+    color: white;
+    height: 75%;
+    font-size: 35px;
+    font-family: "Open Sans Condensed";
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.visible {
-    display: block;
-} */
+a {
+    color: white;
+  }
