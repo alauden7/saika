@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAIKA studios</title>
     <link rel="stylsheet" type="text/css" href="./css/style1.css">
+    <link rel="javascript" href="./js/home.js">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="top-row">
-    <!-- <h2>About</h2> -->
-    <canvas id="canvas2" width="300" height="300">An alternative text describing what your canvas displays.</canvas>
-    <h2>Contact</h2>
+    <h2>About</h2>
+    <!-- <canvas id="canvas2" width="300" height="300">An alternative text describing what your canvas displays.</canvas> -->
+    <a href="/Users/anyalaudenslager/Desktop/SAIKA/public/contact.html"><h2>Contact</h2></a>
 </div>
 <div class="header">
     <canvas id="canvas" width="300" height="300">An alternative text describing what your canvas displays.</canvas>
@@ -50,13 +51,18 @@ html, body {
 </style>
 
 <script>
+
+// document.getElementById("contact").onclick = function () {
+//         location.href = "/Users/anyalaudenslager/Desktop/SAIKA/public/contact.html"
+//     };  
+
 var saika = new Image();
 var moon = new Image();
 var orbital = new Image();
 function init() {
   saika.src = "/Users/anyalaudenslager/Saika/Saika-text.png";
   moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
-  orbital.src = "/Users/anyalaudenslager/Desktop/SAIKA/Orbital-2.png";
+  orbital.src = "/Users/anyalaudenslager/Desktop/SAIKA/public/css/images/Orbital-2.png";
   window.requestAnimationFrame(draw);
   window.requestAnimationFrame(draw2);
 }
@@ -126,7 +132,7 @@ function draw2() {
   ctx.arc(150, 150, 110, 0, Math.PI * 2, false); // orbital rotation
   ctx.stroke();
  
-//   ctx.drawImage(saika, 0, 0, 280, 280);
+  ctx.drawImage(saika, 0, 0, 280, 280);
 
   window.requestAnimationFrame(draw2);
 }
